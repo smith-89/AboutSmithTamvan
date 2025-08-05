@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portofolio Miftah Fauzan</title>
+        <style>
+                /* Reset */
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: "Arial", sans-serif;
+                }
+
+                body {
+                    background: url("https://i.ibb.co.com/gD1ptrd/503403789b8d7ba9414454989d3e712b.jpg")
+                        no-repeat center center fixed;
+                    background-size: cover;
+                    color: #fff;
+                    min-height: 100vh;
+                }
+
+                /* Navbar */
+                nav {
+                    background: rgba(0, 0, 0, 0.6);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 20px;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                    z-index: 1000;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+                }
+
+                .logo {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #fff;
+                }
+
+                nav ul {
+                    display: flex;
+                    list-style: none;
+                }
+
+                nav ul li {
+                    margin-left: 20px;
+                }
+
+                nav ul li a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1rem;
+                    transition: color 0.3s ease;
+                }
+
+                nav ul li a:hover {
+                    color: #1e90ff;
+                }
+
+                /* Hamburger Menu */
+                .hamburger {
+                    display: none;
+                    flex-direction: column;
+                    cursor: pointer;
+                    gap: 5px;
+                }
+
+                .hamburger div {
+                    width: 30px;
+                    height: 4px;
+                    background-color: #fff;
+                }
+
+                /* Hero Section */
+                .hero {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 150px 20px 50px;
+                    color: #fff;
+                }
+
+                .profile-img {
+                    margin-bottom: 20px;
+                }
+
+                .profile-img img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    border: 4px solid rgba(255, 255, 255, 0.8);
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                }
+
+                .hero h1 {
+                    font-size: 3rem;
+                    margin-bottom: 10px;
+                }
+
+                .hero h2 {
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                }
+
+                .hero p {
+                    font-size: 1.1rem;
+                    line-height: 1.5;
+                    max-width: 600px;
+                }
+
+                /* Projects Section */
+                .projects {
+                    padding: 50px 20px;
+                    text-align: center;
+                    background: rgba(blue);
+                    border-radius: 10px;
+                    margin-top: 50px;
+
+                }
+
+                .projects h2 {
+                    font-size: 2.5rem;
+                    margin-bottom: 30px;
+                    margin-left: 400px;
+                }
+
+                .projects .project {
+                    display: inline-block;
+                    margin: 20px;
+                    text-align: center;
+                    padding: 20px;
+                    background: #4f74ff;
+                    border-radius: 10px;
+                    width: 200px;
+                    transition: transform 0.3s ease;
+                }
+
+                .projects .project:hover {
+                    transform: translateY(-10px);
+                }
+
+                .projects img {
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 15px;
+                }
+
+                .projects h3 {
+                    font-size: 1.2rem;
+                    margin-bottom: 10px;
+                }
+
+                /* Contact Section */
+                .contact {
+                    background: rgba(blue);
+                    padding: 50px 20px;
+                    text-align: center;
+                    border-radius: 10px;
+                    margin-top: 50px;
+                }
+
+                .contact h2 {
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                }
+
+                .contact a {
+                    display: inline-block;
+                    padding: 15px 20000px;
+                    background: #25d366;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 1.2rem;
+                    text-decoration: none;
+                    transition: background 0.3s ease;
+                }
+
+                .contact a:hover {
+                    background: #128c7e;
+                }
+
+                /* Footer */
+
+
+                /* Media Queries */
+                @media (max-width: 768px) {
+                    nav ul {
+                        display: none;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 20px;
+                    }
+
+                    nav ul.active {
+                        display: flex;
+                    }
+
+                    nav ul li {
+                        margin: 10px 0;
+                    }
+
+                    .hero h1 {
+                        font-size: 2rem;
+                    }
+
+                    .hero h2 {
+                        font-size: 1.2rem;
+                    }
+
+                    .hero p {
+                        font-size: 0.9rem;
+                    }
+
+                    .hamburger {
+                        display: flex;
+                    }
+                }
+                .social-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                    margin: 50px 0;
+                }
+
+                .social-links a {
+                    background-color: #4ffffd;
+                    color: green;
+                    text-decoration: none;
+                    padding: 15px 25px;
+                    border-radius: 10px;
+                    font-size: 18px;
+                    box-shadow: 0 0 15px #00ffff80;
+                    transition: all 0.3s ease;
+                    width: 80%;
+                    max-width: 300px;
+                    text-align: center;
+                }
+
+                .social-links a:hover {
+                    box-shadow: 0 0 25px #00ffff;
+                    transform: scale(1.05);
+                    background-color: #e3ff16;
+                }
+                button {
+                    color: white;
+                    background-color: #008d84;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 25px;
+                    margin-left: 120px;
+                    cursor: pointer;
+                    transition: background-color: green;
+                    display: flex;
+
+
+                }
+            .mmk {
+              display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                    padding: 10px;
+                    height:15px;
+                    width: 400px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">Miftah Fauzan</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero" id="about">
+            <div class="profile-img">
+                <img
+                    src="https://files.catbox.moe/wgwzao.jpg"
+                    alt="Foto Miftah"
+                />
+            </div>
+            <h1>Miftah Fauzan</h1>
+            <h2>Web Developer & Designer</h2>
+            <p>
+                Hi, I’m Miftah Fauzan, a passionate Web Developer and Designer
+                dedicated to creating unique, functional, and visually appealing
+                digital experiences.
+            </p>
+        </div>
+
+        <!-- Projects Section -->
+
+        <button onclick="lanjut()">Lihat lebih lanjut</button>
+        <div id="info" style="display: none">
+            <div class="social-links">
+                <a
+                    href="https://www.instagram.com/eserzet_89?igsh=MWVvNDJpaXVmNTRkOA=="
+                    target="_blank"
+                    >Instagram</a
+                >
+                <a
+                    href="https://www.facebook.com/miftah.fauzan.58520"
+                    target="_blank"
+                    >Facebook</a
+                >
+                <a href="https://github.com/smith-89" target="_blank">GitHub</a>
+
+                <div class="mmk">
+                    <a href="https://wa.me/6285659611760" target="_blank"
+                        >Chat on WhatsApp</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+
+        <!-- Footer -->
+
+        <script>
+            function lanjut() {
+                document.getElementById("info").style.display = "block";
+            }
+
+            function toggleMenu() {
+                const navbar = document.getElementById("navbar");
+                navbar.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
